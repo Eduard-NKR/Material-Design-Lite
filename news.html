@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="source/icon.css">
+  <script src="source/material.min.js"></script>
+  <link rel="stylesheet" href="source/material.indigo-pink.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- Uses a header that contracts as the page scrolls down. -->
+<style>
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+.demo-layout-waterfall {
+  background: url('images/instigate_mobile.png') center;
+  background-repeat: no-repeat;
+}
+</style>
+
+  <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header mdl-layout__header--waterfall">
+      <!-- Top row, always visible -->
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Instigate Mobile</span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                    mdl-textfield--floating-label mdl-textfield--align-right">
+          <label class="mdl-button mdl-js-button mdl-button--icon"
+                 for="waterfall-exp">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" name="sample"
+                   id="waterfall-exp" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Instigate Mobile</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">News</a>
+        <a class="mdl-navigation__link" href="">Jobs</a>
+        <a class="mdl-navigation__link" href="">Services</a>
+        <a class="mdl-navigation__link" href="">Specialization</a>
+        <a class="mdl-navigation__link" href="">Partners</a>
+        <a class="mdl-navigation__link" href="">About us</a>
+        <a class="mdl-navigation__link" href="">Contacts</a> 
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+      <table class="mdl-data-table mdl-js-data-table mdl-data-table--selectable mdl-shadow--2dp">
+      <thead>
+        <tr>
+          <th class="mdl-data-table__cell--non-numeric">Material</th>
+          <th>News</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Acrylic (Transparent)</td>
+          <td>25</td>
+          <td>$2.90</td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Plywood (Birch)</td>
+          <td>50</td>
+          <td>$1.25</td>
+        </tr>
+        <tr>
+          <td class="mdl-data-table__cell--non-numeric">Laminate (Gold on Blue)</td>
+          <td>10</td>
+          <td>$2.35</td>
+        </tr>
+      </tbody>
+    </table>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="source/icon.css">
+  <script src="source/material.min.js"></script>
+  <link rel="stylesheet" href="source/material.indigo-pink.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <script>
+function startTime() {
+    var today = new Date();
+    var h = today.getHours();
+    var m = today.getMinutes();
+    var s = today.getSeconds();
+    m = checkTime(m);
+    s = checkTime(s);
+    document.getElementById('txt').innerHTML =
+    h + ":" + m + ":" + s;
+    var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+    if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+    return i;
+}
+</script>
+</head>
+<body onload="startTime()">
+<!-- Uses a header that contracts as the page scrolls down. -->
+<style>
+.demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  {
+  padding-right: 0;
+}
+   .mdl-layout__header {
+    background-color: #E91E63;
+    color: #212121;
+   }
+.demo-layout-waterfall {
+  background: url('images/instigate_mobile.png') center;
+  background-repeat: no-repeat;
+}
+</style>
+<div class="mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout-icon"></div>
+    <div class="mdl-layout__header-row">
+      <div class="mdl-layout-spacer"></div>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#"><img src="images/wi-fi.png"></a>
+        <a class="mdl-navigation__link" href="#"><img src="images/cell.png"></a>
+        <a class="mdl-navigation__link" href="#"><img src="images/battery.png"></a>
+        <div id="txt"></div>
+      </nav>
+    </div>
+  </header>
+</div>
+  <div class="demo-layout-waterfall mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <!-- Top row, always visible -->
+      <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title"><i><b>Instigate Mobile</b></i></span>
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                    mdl-textfield--floating-label mdl-textfield--align-right">
+          <label class="mdl-button mdl-js-button mdl-button--icon"
+                 for="waterfall-exp">
+            <i class="material-icons">search</i>
+          </label>
+          <div class="mdl-textfield__expandable-holder">
+            <input class="mdl-textfield__input" type="text" name="sample"
+                   id="waterfall-exp" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title"><i><b>Instigate Mobile</b></i></span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="news.html">News</a>
+        <a class="mdl-navigation__link" href="">Jobs</a>
+        <a class="mdl-navigation__link" href="services.html">Services</a>
+        <a class="mdl-navigation__link" href="">Specialization</a>
+        <a class="mdl-navigation__link" href="">Partners</a>
+        <a class="mdl-navigation__link" href="">About us</a>
+        <a class="mdl-navigation__link" href="">Contacts</a> 
+      </nav>
+    </div>
+    <main class="mdl-layout__content">
+      <div class="page-content">
+      <!-- Your content goes here -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="source/icon.css">
+  <script src="source/material.min.js"></script>
+  <link rel="stylesheet" href="source/material.indigo-pink.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <style>
+   .mdl-layout__header {
+    background-color: grey;
+    color: orange;
+   }
+    .mdl-navigation .mdl-navigation__link {
+    color: yellow;
+   }
+    .mdl-layout__drawer .mdl-layout-title {
+    color: blue;
+    }
+    .gg {
+      color: green;
+    }
+    .bg {
+      background-color: yellow;
+    }
+    .demo-card-wide.mdl-card {
+      width: 512px;
+    }
+    .demo-card-wide > .mdl-card__title {
+      color: #fff;
+      height: 176px;
+      background: url('images/services1.png') center;
+      background-color: gray;
+    }
+    .demo-card-wide > .mdl-card__menu {
+      color: #fff;
+    }
+  </style>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall">
+      <div class="mdl-layout-icon"></div>
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Simple Layout</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#">Nav link 1</a>
+          <a class="mdl-navigation__link" href="#">Nav link 2</a>
+          <a class="mdl-navigation__link" href="#">Nav link 3</a>
+        </nav>
+      </div>
+      <div class="mdl-layout__header-row">
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+            <a class="mdl-navigation__link" href="">Link</a>
+          </nav>
+        </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-layout--fixed-tabs">
+      <a href="#fixed-tab-1" class="mdl-layout__tab is-active">Tab 1</a>
+      <a href="#fixed-tab-2" class="mdl-layout__tab">Tab 2</a>
+      <a href="#fixed-tab-3" class="mdl-layout__tab">Tab 3</a>
+    </div>
+    </header>
+    <div class="mdl-layout__drawer">
+      <span class="mdl-layout-title">Simple Layout</span>
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="#">Nav link 1</a>
+        <a class="mdl-navigation__link" href="#">Nav link 2</a>
+        <a class="mdl-navigation__link" href="#">Nav link 3</a>
+      </nav>  
+    </div>
+    <main class="mdl-layout__content">
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">Welcome</h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+          Mauris sagittis pellentesque lacus eleifend lacinia...
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            Get Started
+          </a>
+        </div>
+        <div class="mdl-card__menu">
+          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">share</i>
+          </button>
+        </div>
+      </div>
+            <div class="mdl-card">
+        <div class="mdl-card__title">
+          <h2 class="mdl-card__title-text">title Text Goes Here</h2>
+        </div>
+        <div class="">
+          <img src="images/services1.png" width="220" height="140" border="0" alt="" style="padding:20px;">
+        </div>
+        <div class="mdl-card__supporting-text">
+          This text might describe the photo and provide further information, such as where and
+          when it was taken.
+        </div>
+        <div class="mdl-card__actions">
+          <a href="(URL or function)">Related Action</a>
+        </div>
+      </div>
+      <!-- Colored raised button -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+        Button
+      </button>
+      <!-- Accent-colored raised button -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-button--accent">
+        Button
+      </button>
+      <!-- Accent-colored raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+        Button
+      </button>
+      <a href="#" class="mdl-badge" data-badge="333">This link has a badge.</a>
+      <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+        <div class="mdl-tabs__tab-bar">
+            <a href="#starks-panel" class="mdl-tabs__tab is-active">Starks</a>
+            <a href="#lannisters-panel" class="mdl-tabs__tab">Lannisters</a>
+            <a href="#targaryens-panel" class="mdl-tabs__tab">Targaryens</a>
+        </div>
+
+        <!-- Colored FAB button -->
+        <button class="mdl-button mdl-js-button mdl-js-ripple-effect">
+          <i class="material-icons">power</i>
+        </button>
+        <!-- Colored FAB button with ripple -->
+        <button class="mdl-button mdl-js-button" disabled>
+          <i class="material-icons">power</i>
+        </button>
+        <!-- Primary-colored flat button -->
+        <button class="mdl-button mdl-js-button mdl-button--primary">
+          Button
+        </button>
+        <!-- Accent-colored flat button -->
+        <button class="mdl-button mdl-js-button mdl-button--accent">
+          Button
+        </button>
+        <!-- Icon button -->
+        <button class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">mood</i>
+        </button>
+        <!-- Colored icon button -->
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">
+          <i class="material-icons">mood</i>
+        </button>
+        <button class="mdl-button mdl-js-button mdl-button--raised">Save</button>
+        <button class="mdl-button mdl-js-button mdl-button--icon mdl-button--colored">?</button>
+        <button class="mdl-button mdl-js-button mdl-button--fab">OK</button>
+        <!-- Mini FAB button -->
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab gg bg">
+          <i class="material-icons">add</i>
+        </button>
+        <!-- Colored mini FAB button -->
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab mdl-button--colored">
+          <i class="material-icons">add</i>
+        </button>
+        <!-- Colored FAB button with ripple -->
+        <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored">
+          <i class="material-icons">add</i>
+        </button>
+          <span class="material-icons mdl-badge" data-badge="♥"></span>
+        <div class="mdl-tabs__panel is-active" id="starks-panel">
+          <ul style="list-style-type: upper-roman">
+            <li>Eddard</li>
+            <li>Catelyn</li>
+            <li>Robb</li>
+            <li>Sansa</li>
+            <li>Brandon</li>
+            <li>Arya</li>
+            <li>Rickon</li>
+          </ul>
+        </div>
+        <div class="mdl-tabs__panel" id="lannisters-panel">
+          <ul>
+            <li>Tywin</li>
+            <li>Cersei</li>
+            <li>Jamie</li>
+            <li>Tyrion</li>
+          </ul>
+        </div>
+        <div class="mdl-tabs__panel" id="targaryens-panel">
+          <ul>
+            <li>Viserys</li>
+            <li>Daenerys</li>
+          </ul>
+        </div>
+      </div>
+      <footer class="mdl-mega-footer">
+        <div class="mdl-mega-footer__middle-section">
+
+          <div class="mdl-mega-footer__drop-down-section">
+            <h1 class="mdl-mega-footer__heading">Features</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Partners</a></li>
+              <li><a href="#">Updates</a></li>
+            </ul>
+          <div class="mdl-mega-footer__left-section">
+              <button class="mdl-mega-footer__social-btn"></button>
+              <button class="mdl-mega-footer__social-btn"></button>
+              <button class="mdl-mega-footer__social-btn"></button>
+            </div>
+          </div>
+
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Details</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Specs</a></li>
+              <li><a href="#">Tools</a></li>
+              <li><a href="#">Resources</a></li>
+            </ul>
+          </div>
+
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">Technology</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">How it works</a></li>
+              <li><a href="#">Patterns</a></li>
+              <li><a href="#">Usage</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contracts</a></li>
+            </ul>
+          </div>
+
+          <div class="mdl-mega-footer__drop-down-section">
+            <input class="mdl-mega-footer__heading-checkbox" type="checkbox" checked>
+            <h1 class="mdl-mega-footer__heading">FAQ</h1>
+            <ul class="mdl-mega-footer__link-list">
+              <li><a href="#">Questions</a></li>
+              <li><a href="#">Answers</a></li>
+              <li><a href="#">Contact us</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="mdl-mega-footer__bottom-section">
+          <div class="mdl-logo">Title</div>
+          <ul class="mdl-mega-footer__link-list">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">Privacy & Terms</a></li>
+          </ul>
+        </div>
+
+      </footer>
+    </main>
+  </div>
+</body>
+</head>
+</html>
